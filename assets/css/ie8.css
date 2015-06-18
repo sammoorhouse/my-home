@@ -19,6 +19,7 @@
 /* Form */
 
 	input[type="text"],
+	input[type="location"],
 	input[type="password"],
 	input[type="email"],
 	select,

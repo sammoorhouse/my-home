@@ -745,6 +745,7 @@
 
 	input[type="text"],
 	input[type="password"],
+	input[type="location"],
 	input[type="email"],
 	select,
 	textarea {
@@ -774,6 +775,7 @@
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
+		input[type="location"]:invalid,
 		input[type="email"]:invalid,
 		select:invalid,
 		textarea:invalid {
@@ -782,6 +784,7 @@
 
 		input[type="text"]:focus,
 		input[type="password"]:focus,
+		input[type="location"]:focus,
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
@@ -828,6 +831,7 @@
 
 	input[type="text"],
 	input[type="password"],
+	input[type="location"],
 	input[type="email"],
 	select {
 		height: 2.75em;
@@ -1045,7 +1049,7 @@
 
 /* Signup Form */
 
-	#signup-form {
+	#search-form {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1054,39 +1058,41 @@
 	}
 
 		#signup-form input[type="text"],
-		#signup-form input[type="password"],
-		#signup-form input[type="email"] {
-			width: 18em;
+		#search-form input[type="password"],
+		#search-form input[type="location"],
+		#search-form input[type="email"] {
+			width: 22em;
 		}
 
-		#signup-form > * {
+		#search-form > * {
 			margin: 0 0 0 1em;
 		}
 
-		#signup-form > :first-child {
+		#search-form > :first-child {
 			margin: 0 0 0 0;
 		}
 
 		@media screen and (max-width: 480px) {
 
-			#signup-form {
+			#search-form {
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
 				flex-direction: column;
 			}
 
-				#signup-form input[type="type"],
-				#signup-form input[type="password"],
-				#signup-form input[type="email"] {
+				#search-form input[type="type"],
+				#search-form input[type="location"],
+				#search-form input[type="password"],
+				#search-form input[type="email"] {
 					width: 100%;
 				}
 
-				#signup-form > * {
+				#search-form > * {
 					margin: 1.25em 0 0 0;
 				}
 
-				#signup-form .message {
+				#search-form .message {
 					bottom: -1.5em;
 					font-size: 0.9em;
 					height: 1em;
